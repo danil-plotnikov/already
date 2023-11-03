@@ -1,0 +1,368 @@
+@media screen and ( max-width: 1440px ){
+ html{
+  font-size: 0.0694445vw;
+ }
+} 
+
+@media screen and ( max-width: 800px ){
+ html{
+  font-size: 0.233645vw;
+ }
+
+ .btn{
+  font-size: 12rem;
+ }
+
+ .main{
+  padding: 0 10px;
+ }
+
+ .card{
+  width: 100%;
+  border-radius: 10rem;
+  padding-top: 15rem;
+
+  &__hint{
+   width: 181rem;
+   height: 34rem;
+   font-size: 12rem;
+   transform: none;
+   left: auto;
+   right: 59rem;
+  }
+
+  &-top{
+   padding-left: 10rem;
+   padding-right: 10rem;
+   padding-bottom: 15rem;
+
+   &__name{
+
+    &__num{
+     font-size: 14rem;
+     margin-right: 10rem;
+    }
+
+    &__icon{
+     --size: 17rem;
+    }
+
+    &__text{
+     font-size: 14rem;
+    }
+   }
+
+   &__rate{
+
+    &__text{
+     font-size: 14rem;
+    }
+
+    &__stars{
+     
+     svg{
+      display: none;
+      --size: 17rem;
+
+      &:first-child{
+       display: block;
+
+       path{
+        fill: #FF922E;
+       }
+      }
+     }
+    }
+   }
+  }
+
+  &-main{
+   padding: 14rem 10rem 15rem;
+   flex-wrap: wrap;
+   align-items: flex-start;
+  }
+
+  &-wrap{
+   padding-bottom: 10rem;
+   border-bottom: 2rem solid rgba(235, 236, 245, 0.60);
+   margin-bottom: 20rem;
+  }
+
+  &__logo{
+   min-width: 72rem;
+   width: 72rem;
+   height: 60rem;
+   margin-right: 15rem;
+
+   img{
+    max-width: 75%;
+   }
+  }
+
+  &-info{
+   width: auto;
+   margin-right: 0;
+
+   &__bonus{
+    display: none;
+   }
+
+   &__title{
+    font-size: 18rem;
+    margin-bottom: 7rem;
+   }
+
+   &__descr{
+    font-size: 12rem;
+    line-height: normal;
+   }
+  }
+
+  &-adv{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-right: 0;
+   gap: 15rem;
+   justify-content: space-between;
+   margin-bottom: 20rem;
+   
+   &__item{
+    width: 185rem;
+    margin: 0;
+    
+    &:nth-child(1){
+     order: 2;
+    }
+
+    &:nth-child(2){
+     order: 4;
+    }
+
+    &:nth-child(3){
+     order: 1;
+    }
+
+    &:nth-child(4){
+     order: 3;
+    }
+   }
+  }
+
+  &-buttons{
+   margin: 0;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   width: 100%;
+   margin-bottom: 15rem;
+  }
+  
+  &__btn{
+   width: 189rem;
+   height: 44rem;
+   margin-bottom: 0;
+  }
+
+  &-brands{
+   order: 2;
+   display: flex;
+   flex-direction: column-reverse;
+   width: 100%;
+
+   &__table{
+    display: none;
+   }
+
+   &__more{
+
+    &::before,
+    &::after{
+     width: 144rem;
+    }
+
+    &:hover{
+     &::before,
+     &::after{
+      width: 130rem;
+     }
+    }
+   }
+  }
+
+  &-bottom{
+   padding-right: 10rem;
+   padding-left: 10rem;
+   flex-direction: column;
+
+   &.active{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    max-height: 500rem;
+   }
+
+   &__brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15rem;
+    
+    &__item{
+     width: 53rem;
+     height: 34rem;
+     border-radius: 5rem;
+     background: rgba(235, 236, 245, 0.65);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     img{
+      max-width: 95%;
+      object-fit: contain;
+     }
+    }
+   }
+
+   &__descr{
+    width: 100%;
+    font-size: 12rem;
+    line-height: 166%;
+    margin-bottom: 15rem;
+   }
+
+   &__list{
+    border-radius: 10rem;
+    width: 100%;
+    padding: 10rem;
+    margin-bottom: 10rem;
+
+    &:last-child{
+     margin-bottom: 0;
+    }
+
+    &__item{
+     margin-bottom: 10rem;
+
+     i{
+      font-size: 12rem;
+     }
+
+     p{
+      font-size: 12rem;
+      line-height: normal;
+     }
+    }
+   }
+  }
+ }
+} 
+
+@media screen and ( max-width: 420px ){
+ html{
+  font-size: 0.3125vw;
+ }
+ 
+ .card{
+
+  &__hint{
+   width: 141rem;
+   height: 32rem;
+   font-size: 10rem;
+   right: 64rem;
+  }
+
+  &-top{
+
+   &__name{
+
+    &__num{
+     margin-right: 5rem;
+    }
+
+    &__icon{
+     margin-right: 5rem;
+    }
+   }
+  }
+
+  &-wrap{
+   margin-bottom: 15rem;
+  }
+
+  &__logo{
+   height: 84rem;
+   margin-right: 10rem;
+  }
+  
+  &-adv{
+   justify-content: flex-start;
+   gap: 10rem 15rem;
+   margin-bottom: 15rem;
+
+   &__item{
+    width: auto;
+
+    i{
+     font-size: 14rem;
+     margin-right: 5rem;
+    }
+
+    p{
+     font-size: 12rem;
+    }
+   }
+  }
+
+  &-buttons{
+   flex-direction: column-reverse;
+   gap: 10rem;
+   margin-bottom: 15rem;
+  }
+
+  &__btn{
+   width: 100%;
+   height: 44rem;
+  }
+
+  &-brands{
+
+   &__more{
+
+    &::before,
+    &::after{
+     width: 91rem;
+    }
+
+    &:hover{
+     &::before,
+     &::after{
+      width: 80rem;
+     }
+    }
+   }
+  }
+
+  &-bottom{
+
+   &__brands{
+    margin-bottom: 10rem;
+
+    &__item{
+     width: 38.247rem;
+     height: 24rem;
+
+     img{
+      max-width: 80%;
+      max-height: 80%;
+     }
+    }
+   }
+
+   &__descr{
+    font-size: 10rem;
+    line-height: 150%;
+    margin-bottom: 10rem;
+   }
+  }
+ }
+}
